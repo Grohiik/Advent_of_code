@@ -4,16 +4,16 @@ floor = 0
 charNr = 1
 
 for char in input:
-    if(char == "("):
-        floor+=1
-    
-    else:
-        floor-=1
+    if char == "(":
+        floor += 1
 
-    if(floor < 0):
+    else:
+        floor -= 1
+
+    if floor < 0:
         print(charNr)
         break
 
-    charNr+=1
+    charNr += 1
 
 print(floor)
