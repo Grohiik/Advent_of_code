@@ -21,6 +21,7 @@ for i in range(len(matrix[-1])):
     transposed.append([i for i in row if i != ""])
 
 matrix = transposed
+matrix = [[j[1] for j in i] for i in matrix]
 
 # parse moves
 input = [i.split(" ") for i in input[0].split("\n")]
